@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './contacto.component.css'
 })
 export class ContactoComponent {
+  titulo:string = "Contactos"
+
+  medios:any[] = [
+    {"texto":"En twitter"},
+    {"texto":"En facebook"},
+    {"texto":"Por correo electrónico"}
+  ]
 
 }
