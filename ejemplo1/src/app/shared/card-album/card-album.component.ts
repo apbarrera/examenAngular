@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Foto } from '../../interfaz/foto';
 
 @Component({
   selector: 'app-card-album',
@@ -8,12 +9,6 @@ import { Component } from '@angular/core';
 })
 
 export class CardAlbumComponent {
-  cards = [
-    { text: 'This is a wider card with supporting text.', time: '9 mins' },
-    { text: 'Another example of a card with some content.', time: '5 mins' },
-    { text: 'This card has different text and a new time.', time: '12 mins' },
-    { text: 'More content to show in this album.', time: '7 mins' },
-    { text: 'Angular makes it easy to create dynamic UIs.', time: '10 mins' }
-  ];
+  @Input() cards: Foto[] = []; // Cambia el tipo de any[] a Foto[]
 
 }
