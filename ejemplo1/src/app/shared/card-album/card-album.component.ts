@@ -9,6 +9,5 @@ import { Foto } from '../../interfaz/foto';
 })
 
 export class CardAlbumComponent {
-  @Input() cards: Foto[] = []; // Cambia el tipo de any[] a Foto[]
-
+  @Input() cards: Foto[] = []; // Definiendo el tipo correctamente
 }
