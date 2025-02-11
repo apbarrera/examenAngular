@@ -11,4 +11,13 @@ export class RecursosService {
   obtenerDatos() {
     return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
   }
+
+  obtenerPosts(){
+    return this.http.get('https://jsonplaceholder.typicode.com/posts')
+  }
+
+  obtenerDetallePosts(id:number){
+    return this.http.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+  }
+  
 }
