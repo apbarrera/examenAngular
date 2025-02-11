@@ -2,7 +2,7 @@
     @for (card of cards; track card.id) {
       <div class="col">
         <div class="card shadow-sm">
-          <img [src]="card.url" alt="{{card.id}}">
+          <img src="{{fotos[card.id].url}}">
           <div class="card-body">
             <p class="card-text">{{card.text}}</p>
             <div class="d-flex justify-content-between align-items-center">

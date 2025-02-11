@@ -9,6 +9,6 @@ export class RecursosService {
   constructor(private http: HttpClient) { }
 
   obtenerDatos() {
-    return this.http.get('https://dawn-fiec-espol-default-rtdb.firebaseio.com/photos.json')
+    return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
   }
 }

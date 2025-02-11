@@ -3,4 +3,4 @@ export interface Foto {
     url: string;
     text: string;
     time: string;
-  }
+}
